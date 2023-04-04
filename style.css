@@ -167,7 +167,17 @@ table {
 }
 
 .md{
+    display: flex;
+}
+
+.lg{
     display: none;
+}
+
+.column-test{
+    width: 33%;
+    min-width: 33%;
+    padding: 6px;
 }
 
 @media only screen and (max-width: 1650px) {
@@ -389,6 +399,7 @@ summary {
     top: 0px;
     background: white;
     margin-bottom: 20px;
+  
 }
 
 .summary-part {
@@ -436,6 +447,7 @@ summary {
 
 details[open] summary~* {
     animation: sweep .5s ease-in-out;
+    pointer-events: all;
 }
 
 summary:hover {
@@ -509,6 +521,13 @@ summary:hover .count {
                                     not supported by any browser */
 }
 
+.left{
+    pointer-events: none;
+}
+
+.right{
+    pointer-events: none;
+}
 .content-item-wrapper>div {
     display: flex;
     align-items: center;
@@ -561,6 +580,7 @@ summary:hover .count {
     padding-left: 10px;
 }
 
+ 
 @keyframes sweep {
     0% {
         opacity: 0;
