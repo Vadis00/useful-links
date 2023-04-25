@@ -127,6 +127,7 @@ table {
     min-width: 100%;
     display: block;
     padding: 5px;
+    background: white;
 }
 
 .test:hover {
@@ -376,6 +377,7 @@ h2 {
 
 .accordion-menu > summary {
     box-shadow: none;
+    background: white;
 }
 .block {
     display: flex;
@@ -427,8 +429,6 @@ summary {
     font-size: 18px;
  
 }
-
- 
 
 .descm, .flex-row-50{
     display: none;
@@ -620,4 +620,12 @@ summary:hover .count {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.under-construction-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
